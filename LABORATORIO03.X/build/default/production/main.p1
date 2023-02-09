@@ -1,0 +1,669 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"544 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc/pic16f887.h
+[s S19 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S19 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ]
+"543
+[u S18 `S19 1 ]
+[n S18 . . ]
+"554
+[v _PIR1bits `VS18 ~T0 @X0 0 e@12 ]
+"466
+[s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S16 . RBIF INTF T0IF RBIE INTE T0IE PEIE GIE ]
+"476
+[s S17 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S17 . . TMR0IF . TMR0IE ]
+"465
+[u S15 `S16 1 `S17 1 ]
+[n S15 . . . ]
+"483
+[v _INTCONbits `VS15 ~T0 @X0 0 e@11 ]
+"60
+[v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+[p mainexit ]
+"100 main.c
+[v _setup `(v ~T0 @X0 0 ef ]
+"55 ./LCD.h
+[v _Lcd_Init `(v ~T0 @X0 0 ef ]
+"51
+[v _Lcd_Clear `(v ~T0 @X0 0 ef ]
+"297 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc/pic16f887.h
+[s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S10 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"296
+[u S9 `S10 1 ]
+[n S9 . . ]
+"308
+[v _PORTCbits `VS9 ~T0 @X0 0 e@7 ]
+[v F36 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\builtins.h
+[v __delay `JF36 ~T0 @X0 0 e ]
+[p i __delay ]
+"844 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc/pic16f887.h
+[v _SSPBUF `Vuc ~T0 @X0 0 e@19 ]
+"2184
+[s S82 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S82 . BF UA R_nW S P D_nA CKE SMP ]
+"2194
+[s S83 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S83 . . R . D ]
+"2200
+[s S84 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S84 . . I2C_READ I2C_START I2C_STOP I2C_DATA ]
+"2207
+[s S85 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S85 . . nW . nA ]
+"2213
+[s S86 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S86 . . nWRITE . nADDRESS ]
+"2219
+[s S87 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S87 . . R_W . D_A ]
+"2225
+[s S88 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S88 . . READ_WRITE . DATA_ADDRESS ]
+"2183
+[u S81 `S82 1 `S83 1 `S84 1 `S85 1 `S86 1 `S87 1 `S88 1 ]
+[n S81 . . . . . . . . ]
+"2232
+[v _SSPSTATbits `VS81 ~T0 @X0 0 e@148 ]
+"53 ./LCD.h
+[v _Lcd_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
+"59
+[v _Lcd_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+"194 C:\Program Files\Microchip\xc8\v2.40\pic\include\c90\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"57 ./LCD.h
+[v _Lcd_Write_Char `(v ~T0 @X0 0 ef1`uc ]
+"3388 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc/pic16f887.h
+[v _ANSEL `Vuc ~T0 @X0 0 e@392 ]
+"3450
+[v _ANSELH `Vuc ~T0 @X0 0 e@393 ]
+"1417
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"1479
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1603
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"1665
+[v _TRISE `Vuc ~T0 @X0 0 e@137 ]
+"167
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"229
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"353
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"415
+[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
+"1547
+[s S57 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S57 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1546
+[u S56 `S57 1 ]
+[n S56 . . ]
+"1558
+[v _TRISCbits `VS56 ~T0 @X0 0 e@135 ]
+"1709
+[s S63 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S63 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE ]
+"1708
+[u S62 `S63 1 ]
+[n S62 . . ]
+"1719
+[v _PIE1bits `VS62 ~T0 @X0 0 e@140 ]
+"1869
+[s S70 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S70 . SCS LTS HTS OSTS IRCF ]
+"1876
+[s S71 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S71 . . IRCF0 IRCF1 IRCF2 ]
+"1868
+[u S69 `S70 1 `S71 1 ]
+[n S69 . . . ]
+"1883
+[v _OSCCONbits `VS69 ~T0 @X0 0 e@143 ]
+"857
+[s S30 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S30 . SSPM CKP SSPEN SSPOV WCOL ]
+"864
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . SSPM0 SSPM1 SSPM2 SSPM3 ]
+"856
+[u S29 `S30 1 `S31 1 ]
+[n S29 . . . ]
+"871
+[v _SSPCONbits `VS29 ~T0 @X0 0 e@20 ]
+"284 main.c
+[c E1364 32 33 34 35 36 37 .. ]
+[n E1364 . SPI_MASTER_OSC_DIV4 SPI_MASTER_OSC_DIV16 SPI_MASTER_OSC_DIV64 SPI_MASTER_TMR2 SPI_SLAVE_SS_EN SPI_SLAVE_SS_DIS  ]
+[c E1372 0 128 .. ]
+[n E1372 . SPI_DATA_SAMPLE_MIDDLE SPI_DATA_SAMPLE_END  ]
+[c E1376 16 0 .. ]
+[n E1376 . SPI_CLOCK_IDLE_HIGH SPI_CLOCK_IDLE_LOW  ]
+[c E1380 0 64 .. ]
+[n E1380 . SPI_IDLE_2_ACTIVE SPI_ACTIVE_2_IDLE  ]
+"46 ./spi.h
+[v _spiInit `(v ~T0 @X0 0 ef4`E1364`E1372`E1376`E1380 ]
+"14 main.c
+[p x FOSC  =  INTRC_NOCLKOUT  ]
+"15
+[p x WDTE  =  OFF        ]
+"16
+[p x PWRTE  =  OFF       ]
+"17
+[p x MCLRE  =  OFF       ]
+"18
+[p x CP  =  OFF          ]
+"19
+[p x CPD  =  OFF         ]
+"20
+[p x BOREN  =  OFF       ]
+"21
+[p x IESO  =  OFF        ]
+"22
+[p x FCMEN  =  OFF       ]
+"23
+[p x LVP  =  OFF         ]
+"26
+[p x BOR4V  =  BOR40V    ]
+"27
+[p x WRT  =  OFF         ]
+"55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc/pic16f887.h
+[; <" INDF equ 00h ;# ">
+"62
+[; <" TMR0 equ 01h ;# ">
+"69
+[; <" PCL equ 02h ;# ">
+"76
+[; <" STATUS equ 03h ;# ">
+"162
+[; <" FSR equ 04h ;# ">
+"169
+[; <" PORTA equ 05h ;# ">
+"231
+[; <" PORTB equ 06h ;# ">
+"293
+[; <" PORTC equ 07h ;# ">
+"355
+[; <" PORTD equ 08h ;# ">
+"417
+[; <" PORTE equ 09h ;# ">
+"455
+[; <" PCLATH equ 0Ah ;# ">
+"462
+[; <" INTCON equ 0Bh ;# ">
+"540
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; <" PIR2 equ 0Dh ;# ">
+"653
+[; <" TMR1 equ 0Eh ;# ">
+"660
+[; <" TMR1L equ 0Eh ;# ">
+"667
+[; <" TMR1H equ 0Fh ;# ">
+"674
+[; <" T1CON equ 010h ;# ">
+"768
+[; <" TMR2 equ 011h ;# ">
+"775
+[; <" T2CON equ 012h ;# ">
+"846
+[; <" SSPBUF equ 013h ;# ">
+"853
+[; <" SSPCON equ 014h ;# ">
+"923
+[; <" CCPR1 equ 015h ;# ">
+"930
+[; <" CCPR1L equ 015h ;# ">
+"937
+[; <" CCPR1H equ 016h ;# ">
+"944
+[; <" CCP1CON equ 017h ;# ">
+"1041
+[; <" RCSTA equ 018h ;# ">
+"1136
+[; <" TXREG equ 019h ;# ">
+"1143
+[; <" RCREG equ 01Ah ;# ">
+"1150
+[; <" CCPR2 equ 01Bh ;# ">
+"1157
+[; <" CCPR2L equ 01Bh ;# ">
+"1164
+[; <" CCPR2H equ 01Ch ;# ">
+"1171
+[; <" CCP2CON equ 01Dh ;# ">
+"1241
+[; <" ADRESH equ 01Eh ;# ">
+"1248
+[; <" ADCON0 equ 01Fh ;# ">
+"1349
+[; <" OPTION_REG equ 081h ;# ">
+"1419
+[; <" TRISA equ 085h ;# ">
+"1481
+[; <" TRISB equ 086h ;# ">
+"1543
+[; <" TRISC equ 087h ;# ">
+"1605
+[; <" TRISD equ 088h ;# ">
+"1667
+[; <" TRISE equ 089h ;# ">
+"1705
+[; <" PIE1 equ 08Ch ;# ">
+"1761
+[; <" PIE2 equ 08Dh ;# ">
+"1818
+[; <" PCON equ 08Eh ;# ">
+"1865
+[; <" OSCCON equ 08Fh ;# ">
+"1930
+[; <" OSCTUNE equ 090h ;# ">
+"1982
+[; <" SSPCON2 equ 091h ;# ">
+"2044
+[; <" PR2 equ 092h ;# ">
+"2051
+[; <" SSPADD equ 093h ;# ">
+"2058
+[; <" SSPMSK equ 093h ;# ">
+"2063
+[; <" MSK equ 093h ;# ">
+"2180
+[; <" SSPSTAT equ 094h ;# ">
+"2349
+[; <" WPUB equ 095h ;# ">
+"2419
+[; <" IOCB equ 096h ;# ">
+"2489
+[; <" VRCON equ 097h ;# ">
+"2559
+[; <" TXSTA equ 098h ;# ">
+"2645
+[; <" SPBRG equ 099h ;# ">
+"2707
+[; <" SPBRGH equ 09Ah ;# ">
+"2777
+[; <" PWM1CON equ 09Bh ;# ">
+"2847
+[; <" ECCPAS equ 09Ch ;# ">
+"2929
+[; <" PSTRCON equ 09Dh ;# ">
+"2973
+[; <" ADRESL equ 09Eh ;# ">
+"2980
+[; <" ADCON1 equ 09Fh ;# ">
+"3014
+[; <" WDTCON equ 0105h ;# ">
+"3067
+[; <" CM1CON0 equ 0107h ;# ">
+"3132
+[; <" CM2CON0 equ 0108h ;# ">
+"3197
+[; <" CM2CON1 equ 0109h ;# ">
+"3248
+[; <" EEDATA equ 010Ch ;# ">
+"3253
+[; <" EEDAT equ 010Ch ;# ">
+"3260
+[; <" EEADR equ 010Dh ;# ">
+"3267
+[; <" EEDATH equ 010Eh ;# ">
+"3274
+[; <" EEADRH equ 010Fh ;# ">
+"3281
+[; <" SRCON equ 0185h ;# ">
+"3338
+[; <" BAUDCTL equ 0187h ;# ">
+"3390
+[; <" ANSEL equ 0188h ;# ">
+"3452
+[; <" ANSELH equ 0189h ;# ">
+"3502
+[; <" EECON1 equ 018Ch ;# ">
+"3547
+[; <" EECON2 equ 018Dh ;# ">
+"56 main.c
+[v _voltaje1 `f ~T0 @X0 1 e ]
+"57
+[v _voltaje2 `f ~T0 @X0 1 e ]
+"59
+[v _voltaje1temporal `f ~T0 @X0 1 e ]
+"61
+[v _cont `ui ~T0 @X0 1 e ]
+"63
+[v _VOLTAJE1 `f ~T0 @X0 1 e ]
+"64
+[v _VOLTAJE2 `f ~T0 @X0 1 e ]
+"66
+[v _ADC1 `uc ~T0 @X0 -> 4 `i e ]
+"67
+[v _ADC2 `uc ~T0 @X0 -> 4 `i e ]
+"68
+[v _prueba `uc ~T0 @X0 -> 4 `i e ]
+"70
+[v _hundreds `uc ~T0 @X0 1 e ]
+"71
+[v _tens `uc ~T0 @X0 1 e ]
+"72
+[v _ones `uc ~T0 @X0 1 e ]
+"73
+[v _signo `uc ~T0 @X0 1 e ]
+"75
+[v _unidades `uc ~T0 @X0 1 e ]
+"76
+[v _decenas `uc ~T0 @X0 1 e ]
+"77
+[v _unidades2 `uc ~T0 @X0 1 e ]
+"78
+[v _decenas2 `uc ~T0 @X0 1 e ]
+"80
+[v _tabla `uc ~T0 @X0 -> 16 `i e ]
+[i _tabla
+:U ..
+-> -> 48 `ui `uc
+-> -> 49 `ui `uc
+-> -> 50 `ui `uc
+-> -> 51 `ui `uc
+-> -> 52 `ui `uc
+-> -> 53 `ui `uc
+-> -> 54 `ui `uc
+-> -> 55 `ui `uc
+-> -> 56 `ui `uc
+-> -> 57 `ui `uc
+-> -> 65 `ui `uc
+-> -> 66 `ui `uc
+-> -> 67 `ui `uc
+-> -> 68 `ui `uc
+-> -> 69 `ui `uc
+-> -> 70 `ui `uc
+..
+]
+[v $root$_isr `(v ~T0 @X0 0 e ]
+"105
+[v _isr `(v ~T1 @X0 1 ef ]
+{
+[e :U _isr ]
+[f ]
+"108
+[e $ ! != -> . . _PIR1bits 0 3 `i -> 0 `i 140  ]
+{
+"109
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"110
+}
+[e :U 140 ]
+"113
+[e $ ! != -> . . _PIR1bits 0 4 `i -> 0 `i 141  ]
+{
+"114
+[e = . . _PIR1bits 0 4 -> -> 0 `i `uc ]
+"115
+}
+[e :U 141 ]
+"118
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 142  ]
+{
+"119
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"120
+}
+[e :U 142 ]
+"123
+[e $ ! != -> . . _PIR1bits 0 6 `i -> 0 `i 143  ]
+{
+"124
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"125
+}
+[e :U 143 ]
+"128
+[e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 144  ]
+{
+"129
+[e = _TMR0 -> -> 179 `i `uc ]
+"130
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"131
+}
+[e :U 144 ]
+"134
+[e $ ! != -> . . _INTCONbits 0 0 `i -> 0 `i 145  ]
+{
+"135
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"136
+}
+[e :U 145 ]
+"137
+[e :UE 139 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"142
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"143
+[e ( _setup ..  ]
+"144
+[e ( _Lcd_Init ..  ]
+"145
+[e ( _Lcd_Clear ..  ]
+"147
+[e :U 148 ]
+{
+"150
+[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
+"151
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"152
+[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
+"154
+[e = _SSPBUF -> -> 0 `i `uc ]
+"157
+[e $U 150  ]
+[e :U 151 ]
+{
+}
+[e :U 150 ]
+[e $ ! != -> . . _SSPSTATbits 0 0 `i -> 0 `i 151  ]
+[e :U 152 ]
+"160
+[e = _cont -> _SSPBUF `ui ]
+"162
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"166
+[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
+"167
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"168
+[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
+"170
+[e = _SSPBUF -> -> 1 `i `uc ]
+"173
+[e $U 153  ]
+[e :U 154 ]
+{
+}
+[e :U 153 ]
+[e $ ! != -> . . _SSPSTATbits 0 0 `i -> 0 `i 154  ]
+[e :U 155 ]
+"174
+[e = _voltaje1 -> _SSPBUF `f ]
+"178
+[e = . . _PORTCbits 0 2 -> -> 1 `i `uc ]
+"179
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"180
+[e = . . _PORTCbits 0 1 -> -> 1 `i `uc ]
+"181
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"182
+[e = . . _PORTCbits 0 1 -> -> 0 `i `uc ]
+"184
+[e = _SSPBUF -> -> 0 `i `uc ]
+"186
+[e $U 156  ]
+[e :U 157 ]
+{
+}
+[e :U 156 ]
+[e $ ! != -> . . _SSPSTATbits 0 0 `i -> 0 `i 157  ]
+[e :U 158 ]
+"188
+[e = _voltaje2 -> _SSPBUF `f ]
+"191
+[e = . . _PORTCbits 0 1 -> -> 1 `i `uc ]
+"192
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"197
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+"198
+[e ( _Lcd_Write_String (1 :s 1C ]
+"199
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 8 `i `uc ]
+"200
+[e ( _Lcd_Write_String (1 :s 2C ]
+"201
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 13 `i `uc ]
+"202
+[e ( _Lcd_Write_String (1 :s 3C ]
+"206
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"207
+[e = _VOLTAJE1 / * _voltaje1 -> -> 5 `i `f -> -> 255 `i `f ]
+"208
+[e ( _sprintf (1 , (. , &U _ADC1 :s 4C -> _VOLTAJE1 `d ]
+"209
+[e ( _Lcd_Write_String (1 &U _ADC1 ]
+"210
+[e ( _Lcd_Write_String (1 :s 5C ]
+"214
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 13 `i `uc ]
+"216
+[e = _hundreds -> / _cont -> -> 100 `i `ui `uc ]
+"217
+[e = _tens -> % / _cont -> -> 10 `i `ui -> -> 10 `i `ui `uc ]
+"218
+[e = _ones -> % _cont -> -> 10 `i `ui `uc ]
+"220
+[e ( _Lcd_Write_Char (1 -> + -> _hundreds `i -> 48 `i `uc ]
+"221
+[e ( _Lcd_Write_Char (1 -> + -> _tens `i -> 48 `i `uc ]
+"222
+[e ( _Lcd_Write_Char (1 -> + -> _ones `i -> 48 `i `uc ]
+"226
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
+"227
+[e = _VOLTAJE2 / * _voltaje2 -> -> 5 `i `f -> -> 255 `i `f ]
+"228
+[e ( _sprintf (1 , (. , &U _ADC2 :s 6C -> _VOLTAJE2 `d ]
+"229
+[e ( _Lcd_Write_String (1 &U _ADC2 ]
+"230
+[e ( _Lcd_Write_String (1 :s 7C ]
+"233
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+"234
+}
+[e :U 147 ]
+[e $U 148  ]
+[e :U 149 ]
+"235
+[e $UE 146  ]
+"236
+[e :UE 146 ]
+}
+"242
+[v _setup `(v ~T0 @X0 1 ef ]
+{
+[e :U _setup ]
+[f ]
+"245
+[e = _ANSEL -> -> 0 `i `uc ]
+"246
+[e = _ANSELH -> -> 0 `i `uc ]
+"249
+[e = _TRISA -> -> 0 `i `uc ]
+"250
+[e = _TRISB -> -> 0 `i `uc ]
+"252
+[e = _TRISD -> -> 0 `i `uc ]
+"253
+[e = _TRISE -> -> 0 `i `uc ]
+"255
+[e = _PORTA -> -> 0 `i `uc ]
+"256
+[e = _PORTB -> -> 0 `i `uc ]
+"258
+[e = _PORTD -> -> 0 `i `uc ]
+"259
+[e = _PORTE -> -> 0 `i `uc ]
+"261
+[e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
+"262
+[e = . . _PORTCbits 0 2 -> -> 0 `i `uc ]
+"263
+[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
+"264
+[e = . . _PORTCbits 0 1 -> -> 0 `i `uc ]
+"267
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"268
+[e = . . _INTCONbits 0 6 -> -> 0 `i `uc ]
+"269
+[e = . . _PIE1bits 0 3 -> -> 0 `i `uc ]
+"270
+[e = . . _PIE1bits 0 6 -> -> 0 `i `uc ]
+"271
+[e = . . _INTCONbits 1 3 -> -> 0 `i `uc ]
+"273
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"274
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"275
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"276
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"279
+[e = . . _OSCCONbits 0 4 -> -> 5 `i `uc ]
+"280
+[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
+"282
+[e = . . _SSPCONbits 0 4 -> -> 0 `i `uc ]
+"284
+[e ( _spiInit (4 , , , . `E1364 0 . `E1372 0 . `E1376 1 . `E1380 0 ]
+"285
+[e :UE 159 ]
+}
+"290
+[v _map `(ui ~T0 @X0 1 ef5`uc`i`i`i`i ]
+"291
+{
+[e :U _map ]
+"290
+[v _value `uc ~T0 @X0 1 r1 ]
+[v _inputmin `i ~T0 @X0 1 r2 ]
+"291
+[v _inputmax `i ~T0 @X0 1 r3 ]
+[v _outmin `i ~T0 @X0 1 r4 ]
+[v _outmax `i ~T0 @X0 1 r5 ]
+[f ]
+"292
+[e ) -> / * - -> _value `i _inputmin - _outmax _outmin + - _inputmax _inputmin _outmin `ui ]
+[e $UE 160  ]
+"293
+[e :UE 160 ]
+}
+[p f _sprintf 8462336 ]
+[a 4C 37 46 50 102 0 ]
+[a 6C 37 46 50 102 0 ]
+[a 5C 86 0 ]
+[a 7C 86 0 ]
+[a 3C 67 79 78 0 ]
+[a 2C 83 50 0 ]
+[a 1C 83 49 0 ]
